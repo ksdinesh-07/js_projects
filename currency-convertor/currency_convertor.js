@@ -35,6 +35,8 @@ let button=document.getElementById('btn')
 
 button.addEventListener('click',async ()=>{
 
+try{
+
   const from_currency = document.querySelector(".from_currency").value;
   const to_currency = document.querySelector(".to_currency").value;
   let amount=document.getElementById('input').value;
@@ -47,6 +49,12 @@ button.addEventListener('click',async ()=>{
   let result=await convert(from_currency,to_currency,amount);
   document.querySelector('#result').value=result;
 
+    }
+catch(error){
+  console.log("Something Went Wrong")
+  console.log(error)
+}  
+  
 });
 
 
