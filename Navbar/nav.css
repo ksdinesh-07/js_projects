@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('Screenshot from 2026-02-12 20-40-16.png');
+}
+
+nav{
+  background-color: rgb(187, 204, 252);
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(88, 112, 128);
+  
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+
+.logo{
+  font-size: 36px;
+  font-weight: bold;
+
+}
+
+nav a:hover{
+  color: grey;
+}
+
+.menu-line{
+  height: 3px;
+  width: 20px;
+  background-color: darkslategrey;
+  color: rgb(88, 112, 128);
+  margin-bottom: 3px;
+
+}
+
+.menu{
+  cursor: pointer;
+  display: none;
+}
+
+
+
+@media all and (max-width:482px) {
+  nav{
+    flex-direction: column;
+  }
+  nav  li{
+    display: block;
+    padding: 10px opx;
+  }
+
+  ul{
+    text-align: center;
+    padding: 0;
+    display :none;
+  }
+
+  .logo{
+    align-self: flex-start;
+    margin: 10px 0px 0px 20px;
+
+  }
+
+  .menu{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+
+  }
+
+  .showmenu{
+    display: block;
+    
+  }
+
+
+}
